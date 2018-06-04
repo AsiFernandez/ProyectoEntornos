@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Mis pokemon capturados
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-image">
+
+  <!-- Creamos la lista y le pasamos los parametros de globals.ts para que los cargue  -->
+  
+  <ion-list>
+      <ion-card>
+    <ion-item *ngFor="let pokemon of pokemon_list" class="item-content">
+      <h2>{{ pokemon.nombre }}</h2>
+      <p>{{ pokemon.tipo }}</p>
+    </ion-item>
+  </ion-card>
+  </ion-list> 
+  <!-- LISTA -->
+</ion-content>

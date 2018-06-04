@@ -1,0 +1,56 @@
+page-contact {
+
+    .bg-image{
+        background-image: url('../assets/imgs/imagenFondo3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .scroll-content{
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ion-card.card{
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+    
+    a, p,
+    ion-card-header.card-header{
+        color: #fff;
+    }
+
+    .list > .item-block:first-child{
+        border:medium none;
+    }
+
+
+
+    .list > .item-block .item-inner{
+        border:medium none;
+    }
+
+    .item{
+        margin-bottom:10px;
+        background: rgbaa(255, 255, 255, 0.5);
+        border: medium none;
+    }
+
+    .text-input, {
+        color: rgb(0, 0, 0);
+    }
+
+    
+    *:-moz-placeholder,
+    *:-ms-input-placeholder,
+    *::webkit-input-placeholder,
+    input::-moz-placeholder{
+        color: #fff!important;
+    }
+}

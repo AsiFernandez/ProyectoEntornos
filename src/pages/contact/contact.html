@@ -1,0 +1,21 @@
+<ion-content class="bg-image">
+  <ion-card>
+    <ion-card-header>
+      Añade un nuevo pokemon 
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item> 
+<!--Creamos el formulario y en los inputs le pasamos el parametro ngmodel y donde se va a guardar, el valor,
+    en este caso en  nuevopokemon.nombre y nuevopokemon.tipo-->
+          <ion-input type="text" [(ngModel)]="nuevoPokemon.nombre" placeholder="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="nuevoPokemon.tipo" placeholder="tipo"></ion-input>
+          </ion-item>
+      </ion-list>
+      <!-- Creamos un boton que cuando hagamos click en el ejecute la funcion  anadir para añadirlo a la lista-->
+      <button ion-button color="secondary" full (click) ="anadir()" >Añadir</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
